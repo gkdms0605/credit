@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>간단한 자기소개 페이지 만들기</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .topnav{
+      display: flex;
+      align-items: center;
+      box-shadow: 3px 3px 3px gray;
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      padding-left: 120px;
+    }
+    .mainnav{
+      margin-left: 1200px;
+      display: flex;
+    }
+    .mainnav li{
+      all: unset;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .mainnav a:hover{
+      color: rgb(52, 218, 162);
+    }
+    .mainnav a::after{
+      content: "";
+      width: 0%;
+      background-color: rgb(52, 218, 162);
+      display: block;
+      transition: 0.8s;      
+    }
+    .mainnav a:hover::after{
+      width: 100%;
+      height: 2px;
+    }
+    .mainnav a{
+      all: unset;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .main{
+      padding-top: 100px;
+      padding-left: 120px;
+    }
+    img{
+      padding-bottom: 10px;
+    }
+    .hello h1, .hello h3{
+      padding-bottom: 10px;
+    }
+    .hello hr{
+      margin-bottom: 10px;
+      width: 1600px;
+    }
+    .hell p{
+      padding-top: 80px;
+      padding-bottom: 80px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <h2>2111이하은</h2>
+    <ul class="mainnav">
+      <li><a href="index.html">메인화면</a></li>
+      <li><a href="cat.html">나만없어고먐미</a></li>
+      <li><a href="homeworks.html">HOMEWORKS</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="hello">
+      <img src="data:image/jpeg;base64,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" alt="cat">
+      <h1 class="title">안녕하세요!</h1>
+      <h3>저는 <a href="http://school.gyo6.net/gbsw">경북소프트웨어고등학교</a> 2학년 1반 이하은 입니다.</h3>
+      <hr>
+    </div>
+    <div class="hell">
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>저는 집에 너무 가고 싶어요.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>집에 보내주세요.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>으얼ㅣㄴㅁㄹ미나마리ㅇ막</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>.</p>
+      <p>프로젝트 왜함 ㅗㅗㅓ리ㅏㄴ아ㅗㄹㅏㄴ</p>
+    </div>
+  </div>
+</body>
+</html>

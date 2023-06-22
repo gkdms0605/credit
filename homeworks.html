@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>간단한 자기소개 페이지 만들기</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      box-shadow: 3px 3px 3px gray;
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      background-color: white;
+      padding-left: 120px;
+    }
+
+    .mainnav {
+      margin-left: 1167px;
+      display: flex;
+    }
+
+    .mainnav li {
+      all: unset;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .mainnav a:hover {
+      color: rgb(52, 218, 162);
+    }
+
+    .mainnav a::after {
+      content: "";
+      width: 0%;
+      background-color: rgb(52, 218, 162);
+      display: block;
+      transition: 0.8s;
+    }
+
+    .mainnav a:hover::after {
+      width: 100%;
+      height: 2px;
+    }
+
+    .mainnav a {
+      all: unset;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .main {
+      padding-top: 150px;
+      padding-left: 120px;
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main p{
+      padding-bottom: 50px;
+    }
+    .main li{
+      all: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    a{
+      all: unset;
+      cursor: pointer;
+    }
+    a:hover{
+      color: rgb(52, 83, 218);
+      transition: 0.6s;
+    }
+    a::after{
+      content: '';
+      width: 0%;
+      display: block;
+      transition: 0.6s;
+      background-color: rgb(52, 83, 218);
+    }
+    a:hover::after{
+      width: 100%;
+      height: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topnav">
+    <h2>HOMEWORKS</h2>
+    <ul class="mainnav">
+      <li><a href="index.html">메인화면</a></li>
+      <li><a href="cat.html">나만없어고먐미</a></li>
+      <li><a href="homeworks.html">HOMEWORKS</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <p>list</p>
+    <ul>
+      <li><a href="../김진현/index.html">진현</a></li>
+      <li><a href="../14서한희/creadit/index.html">한희</a></li>
+      <li><a href="../강민재/자기소개서.html">민재</a></li>
+      <li><a href="../유림/1414 정유림 자기소개/imdex.html">유림</a></li>
+      <li><a href="../주은/html/index.html">주은</a></li>
+      <li><a href="../성준/Introduce_myself/introduce.html">성준</a></li>
+      <li><a href="../태우/index.html">태우</a></li>
+      <li><a href="../유진승/index.html">진승</a></li>
+      <li><a href="../예진/web-문예진/index.html">예진</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
